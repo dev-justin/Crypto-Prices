@@ -6,6 +6,7 @@ function CryptoNews({ link, title, image_url }) {
     <div>
       <a
         href={link}
+        rel="noreferrer"
         target="_blank"
         className="max-w-xs flex flex-col items-center bg-brand-card rounded-lg shadow-md overflow-clip h-full hover:shadow-xl active:scale-95 transition duration-300 ease-out"
       >

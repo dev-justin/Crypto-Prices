@@ -22,7 +22,7 @@ export default function Home({ cryptos, news }) {
         <h1 className="text-3xl text-center pb-12">Featured News</h1>
         <section className="flex pb-12 gap-4 justify-center 2xl:justify-between flex-wrap">
           {news.map((newsItem) => (
-            <CryptoNews {...newsItem} />
+            <CryptoNews key={newsItem.link} {...newsItem} />
           ))}
         </section>
 

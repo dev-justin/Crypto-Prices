@@ -13,11 +13,11 @@ function Trending({ name, large, symbol, market_cap_rank, price_btc, btc }) {
             className="rounded-full"
           />
         </div>
-        <h3 className="mt-4 whitespace-nowrap">{name}</h3>
+        <h3 className="mt-4 text-center">{name}</h3>
         <div className="absolute -left-3 -top-3 bg-brand-h rounded-full w-8 h-8 flex justify-center items-center shadow-md">
           <span className=" text-brand-bg">{market_cap_rank}</span>
         </div>
-        <div>
+        <div className="bg-brand-a1 rounded-full p-1 shadow-md mt-4">
           <span>${(price_btc * btc).toFixed(2)} USD</span>
         </div>
       </div>

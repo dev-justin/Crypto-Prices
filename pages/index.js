@@ -8,7 +8,6 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 
 export default function Home({ success, coins, trending }) {
-  console.log(trending);
   return (
     <div>
       <Head>

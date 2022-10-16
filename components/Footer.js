@@ -31,6 +31,17 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-xs">
+            Data provided from{" "}
+            <a
+              href="https://www.coingecko.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-a2"
+            >
+              CoinGecko API
+            </a>
+          </p>
           <p className="text-center text-base text-gray-400">
             &copy; Built with React for fun 😀.
           </p>

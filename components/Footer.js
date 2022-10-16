@@ -42,7 +42,7 @@ export default function Footer() {
               CoinGecko API
             </a>
           </p>
-          <p className="text-center text-base text-gray-400">
+          <p className="text-base text-gray-400">
             &copy; Built with React for fun 😀.
           </p>
         </div>

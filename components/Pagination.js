@@ -8,18 +8,22 @@ export default function Pagination({ getCoins, currentPage }) {
   };
 
   return (
-    <div className="flex items-center justify-between border-t border-gray-200 py-3 ">
+    <div className="flex items-center justify-between border-t border-gray-200 pt-3 ">
       <div className="flex flex-1 justify-between sm:hidden">
-        <Link href={`?page=${Number(currentPage) - 1}`}>
-          <a className="relative inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
-            Previous
-          </a>
-        </Link>
-        <Link href={`?page=${Number(currentPage) + 1}`}>
-          <a className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
-            Next
-          </a>
-        </Link>
+        {(Number(currentPage) > 1 && (
+          <Link href={`?page=${Number(currentPage) - 1}`}>
+            <a className="relative inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
+              Previous
+            </a>
+          </Link>
+        )) || <div></div>}
+        {(Number(currentPage) < 5 && (
+          <Link href={`?page=${Number(currentPage) + 1}`}>
+            <a className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
+              Next
+            </a>
+          </Link>
+        )) || <div></div>}
       </div>
       <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
         <div>

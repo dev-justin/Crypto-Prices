@@ -34,9 +34,9 @@ export default function Home({ success, coins, trending }) {
         )}
 
         {/* Trending */}
-        <h1 className="text-3xl pb-12">Trending Coins</h1>
+        <h1 className="text-3xl pb-4 sm:pb-12">Trending Coins</h1>
         {success && (
-          <section className="flex pb-12 justify-center 2xl:justify-between flex-wrap">
+          <section className="flex sm:pb-12 justify-center 2xl:justify-between flex-wrap">
             <Swiper
               slidesPerView="auto"
               modules={[Autoplay]}
@@ -72,7 +72,7 @@ export default function Home({ success, coins, trending }) {
         )}
 
         {/* Crypto prices */}
-        <h1 className="text-3xl text-left pb-12">Crypto Prices</h1>
+        <h1 className="text-3xl text-left pb-8 sm:pb-12">Crypto Prices</h1>
         {success && (
           <section className="flex flex-col gap-8">
             {coins.getCoins.map((coin) => (
